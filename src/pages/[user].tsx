@@ -47,7 +47,7 @@ const User = () => {
 
         { ( userdata.location ? (<span className="mono text-center">location: { userdata.location }</span>) : <></> ) }
         { ( userdata.company ? (<span className="mono text-center">works at { userdata.company }</span>) : <></> ) }
-        { ( userdata.blog ? (<a href={`https://${userdata.blog}`} className="mono text-center"><span>has a website: <span className="mono underline underline-offset-1 hover:underline-offset-4 focus:underline-offset-4 transition-all duration-200">{ userdata.blog }</span></span></a>) : <></> ) }
+        { ( userdata.blog ? (<a href={ ( userdata.blog.startsWith("https://") || userdata.blog.startsWith("http://") ? userdata.blog : `${userdata.blog}` ) } className="mono text-center"><span>has a website: <span className="mono underline underline-offset-1 hover:underline-offset-4 focus:underline-offset-4 transition-all duration-200">{ userdata.blog }</span></span></a>) : <></> ) }
         <span className="mono text-center">{ ( userdata.twitter_username ? (<a href={`https://twitter.com/${userdata.twitter_username}`} className="mono text-center"><span>twitter: <span className="mono underline underline-offset-1 hover:underline-offset-4 focus:underline-offset-4 transition-all duration-200">{ userdata.twitter_username }</span></span></a>) : "no twitter username" ) }</span>
 
         <p className="mono text-gray-500 text-center">-----------------------------</p>
