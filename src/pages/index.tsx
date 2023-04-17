@@ -8,7 +8,7 @@ const Home: NextPage = () => {
             <Head>
                 <title>gitsum by blueysh</title>
             </Head>
-            <div className="w-full h-[100vh] flex flex-col items-center justify-center text-white font-semibold">
+            <div className="max-w-[550px] py-10 mx-auto flex flex-col items-center justify-center text-white font-semibold">
                 <h1><span className="mono">gitsum</span> by <span className="mono">blueysh</span></h1>
                 <h2 className="mono italic text-center">summarize your github presence and gitsum job offers</h2>
 

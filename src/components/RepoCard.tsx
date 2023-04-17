@@ -5,7 +5,7 @@ export const RepoCard = (data: any) => {
         <motion.a
             href={data.html_url}
             target="_blank"
-            className="px-15 py-5 bg-indigo-900 text-white text-lg font-normal items-center justify-center rounded-md mt-7"
+            className="px-15 py-2 bg-indigo-900 text-white text-lg font-normal items-center justify-center rounded-md mt-5"
             whileHover={{ scale: 0.97 }}
             whileTap={{ scale: 0.9 }}
         >
